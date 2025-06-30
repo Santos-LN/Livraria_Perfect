@@ -119,7 +119,6 @@ df_compras = pd.DataFrame ({
 
 # print(tabulate(df_compras, headers='keys', tablefmt='grid'))
 
-
 df_hist_compras = pd.merge(
     df_compras,
     df_clientes,
@@ -143,7 +142,5 @@ df_hist_obras = pd.merge(
     on='id_livro',
     how='left'
 )
-
-
 
 print(tabulate(df_hist_obras, headers='keys', tablefmt='grid'))
